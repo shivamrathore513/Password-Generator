@@ -48,13 +48,6 @@ function generateRandomSymbol() {
     return symbol[index];
 }
 
-// console.log(generateRandomLowercase());
-// console.log(generateRandomUppercase());
-// console.log(generateRandomNumber());
-// console.log(generateRandomSymbol());
-
-// --------------------------------------
-
 
 // Strength Color Based on Password 
 let indicator = document.querySelector('.indicator');
@@ -103,9 +96,7 @@ function calcStrength() {
 let copyMessage = document.querySelector("[copyMessage]");
 let copyBtn = document.querySelector(".copyBtn");
 let passwordDisplay = document.querySelector("input[passwordDisplay]");
-// passwordDisplay.value = "My Name is Priyansh";
 
-// Why we use it - https://stackoverflow.com/questions/45071353/copy-text-string-on-click#:~:text=15-,Use%20the%20Clipboard,-API!
 async function copyContent() {
     try {
         await navigator.clipboard.writeText(passwordDisplay.value);
